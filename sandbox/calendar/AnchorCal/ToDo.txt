@@ -1,0 +1,20 @@
+04-04-2005
+
+This list is growing instead of getting shorter :)
+
+Planned options:
+
+===================================================================
+Print x number of calendars with a single call to the script with a
+specified number of columns.
+
+So:
+
+cal.php?m=p1&c=3&count=4
+
+would print 4 months (count = 4) in a grid with 3 columns (c = 3) starting
+with last month. The number of rows needed will be computed based on the
+count and columns settings. So this example would result in two rows.
+=====================================================================
+
+Add navigation options for moving forward and backwards thru months.

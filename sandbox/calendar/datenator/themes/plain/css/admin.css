@@ -1,0 +1,116 @@
+/* Normal sized links */
+
+a.admin_menu 
+{
+	font-size: 14px;
+}
+
+.cal_name 
+{
+	font-size: 21px;
+}
+
+a.big
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.selbox
+{
+	border: 1px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-right: 2px solid #000000;
+	background-color: #E9E9E9;
+	width: 100%;
+}
+
+.box_value_selected
+{
+	background-color:#D7EBDB;
+}
+
+a.small
+{
+	font-size: 10px;
+}
+
+/* Copyright link */
+a.cp
+{
+	font-size: 10px;
+	color: #888888;
+}
+
+a.cp:hover 
+{
+	color: #000000;
+}  
+
+/* General stylesettings */
+
+body 
+{
+	margin: 0px;
+	font-size: 14px;
+	background-color: #FFFFFF;
+}
+
+table 
+{
+	font-size: 14px;
+	border-collapse: separate;
+}
+
+.copyright 
+{
+	text-align: center;
+	font-family: verdana;
+  font-size: 9px; color: #C0C0C0;
+  background-color: #FFFFFF;
+}
+
+
+ /* Admin styles */
+
+.box, .box_subtitle, .box_title
+{
+	border: 1px solid #000000;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.box_title
+{
+	background-color: #D5D5D5;
+	font-weight: bold;
+}
+ 
+.box_subtitle
+{
+  background-color: #E1E1E1;
+	font-weight: bold;
+}
+
+.box
+{
+  background-color: #F5F5F5;
+}
+
+.box_value
+{
+	vertical-align: top;
+	padding: 3px;
+  background-color: #FFFFFF;
+}
+
+.b_table 
+{
+	border-collapse: collapse;
+	border: 1px solid #000000;
+}
+
+.admin_menu
+{
+	font-size: 14px;
+}

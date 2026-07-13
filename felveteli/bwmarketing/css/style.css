@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,900,700italic,900italic&subset=latin,latin-ext);
+html, body {
+	height: 100%;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #222222;
+	font-size: 14px;
+	background-image: -webkit-linear-gradient(0deg,rgba(88,87,87,1.00) 0%,rgba(255,255,255,1.00) 25%,rgba(255,255,255,1.00) 75%,rgba(88,87,87,1.00) 100%);
+	background-image: -moz-linear-gradient(0deg,rgba(88,87,87,1.00) 0%,rgba(255,255,255,1.00) 25%,rgba(255,255,255,1.00) 75%,rgba(88,87,87,1.00) 100%);
+	background-image: -o-linear-gradient(0deg,rgba(88,87,87,1.00) 0%,rgba(255,255,255,1.00) 25%,rgba(255,255,255,1.00) 75%,rgba(88,87,87,1.00) 100%);
+	background-image: linear-gradient(90deg,rgba(88,87,87,1.00) 0%,rgba(255,255,255,1.00) 25%,rgba(255,255,255,1.00) 75%,rgba(88,87,87,1.00) 100%);
+}
+
+.content {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border: thin solid rgba(0,0,0,1.00);
+	overflow: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	
+}
+.w800 {
+	width: 600px;}
+.content .logo {
+	margin-bottom: 25px;
+ }
+ .content .logo img {
+	 width: 100%;
+ }
+#Bekeroform .inp
+{
+    float: left;
+    width: 100%;
+	margin-bottom: 10px;
+}
+#Bekeroform input 
+{
+	float: right;
+	width: 220px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,1.00);
+	border: thin solid rgba(0,0,0,1.00);
+}
+#Bekeroform select 
+{
+	border-radius: 5px;
+	background-color: rgba(255,255,255,1.00);
+	border: thin solid rgba(0,0,0,1.00);
+
+}
+#Bekeroform .year
+{
+    float: right;
+    width: 60px;
+	margin-right: 10px;
+}
+
+#Bekeroform .month
+{
+    float: right;
+    width: 90px;
+	margin-right: 10px;
+}
+#Bekeroform .day
+{
+    float: right;
+    width: 50px;
+}
+#Bekeroform .butt_kuld {
+	cursor: pointer;
+}
+#Bekeroform .butt_kuld:hover {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(12,135,83,1.00);
+}
+#Bekeroform .butt_kiertekel {
+	cursor: pointer;
+	margin-top: 15px;
+	float: right;
+	background-color: rgba(219,219,219,1.00);
+}
+#Bekeroform .butt_kiertekel:hover {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(12,135,83,1.00);
+}
+#ertekeles tr:first-child, #ertekeles tr:last-child {
+	font-weight: bold;
+}
+#ertekeles tr:last-child td {
+	border-top: thin solid rgba(0,0,0,1.00);
+}
+#ertekeles .min {
+	background-color: rgba(255,0,4,1.00);	
+}
+#ertekeles .max {
+	background-color: rgba(12,135,83,1.00);	
+}
+#ertekeles tr:first-child td {
+	padding-bottom: 15px;;
+}
+#ertekeles td { 
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.butt_vissza {
+	float: right;
+	width: 120px;
+	border-radius: 5px;
+	background-color: rgba(219,219,219,1.00);
+	border: thin solid rgba(0,0,0,1.00);
+	margin-top: 25px;
+	cursor: pointer;
+}
+.butt_vissza:hover {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(12,135,83,1.00);
+}

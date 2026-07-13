@@ -1,0 +1,62 @@
+version: 2
+
+jobs:
+  staging:
+    docker:
+      - image: circleci/php:7.2.6-fpm-stretch
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run: composer install -n --prefer-dist
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run: ssh-keyscan -p 22000 staging.forge.hu >> ~/.ssh/known_hosts
+      - run: ./vendor/bin/envoy run staging --branch=$CIRCLE_BRANCH --build=$CIRCLE_BUILD_NUM --commit=$CIRCLE_SHA1
+
+  release:
+    docker:
+      - image: circleci/php:7.2.6-fpm-stretch
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run: composer install -n --prefer-dist
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run: ssh-keyscan -p 22000 forge.hu >> ~/.ssh/known_hosts
+      - run: ./vendor/bin/envoy run staging --branch=master
+
+workflows:
+  version: 2
+  staging:
+    jobs:
+      - staging:
+          filters:
+            branches:
+              only:
+                - /release\/(.*)/
+
+  release:
+    jobs:
+      - release:
+          filters:
+            branches:
+              only:
+                - /master/

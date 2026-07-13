@@ -1,0 +1,60 @@
+/*******************************************************************************
+ * 2200net Calendar system v.2.0
+ *
+ *                                                              created by Kevin
+ *                                                   email : service@2200net.com
+ *                                                             start  2005/01/25
+ *                                                             update 2006/03/20
+ ******************************************************************************/
+
+
+Install program :
+1. You only edit the file 'pri_config.php' and upload all files to your target.
+2. under sql directory, import the file calendar to your MySQL database.
+3. admin page like : http://yourdomain/admin/
+4. admin default login id and password, please see the file pri_config.php
+5. you can edit any .html file as you need.
+
+
+about langage :
+2200net Calendar support multi language.
+When you save the file, remember save as UNICODE type and keep the same file name.
+
+
+News 2006/03/20
+2200net Calendar v.2.0
+1. database 'webcfg' add new fields :
+     datetype  varchar(30) NOT NULL default 'yymmdd'
+     firstweek char(3)     NOT NULL default 'sun'
+     theme     varchar(40) NOT NULL default 'default'
+2. The week start Monday or Sunday, you can choice.
+3. Calendar start and end make a limited config.
+4. Fix some secureity bug.
+5. On website common config page, you can change admin login name.
+6. Theme select.
+7. How to upgrade the program from 1.x to 2.0 ...
+   Remove all files and copy this new version(2.0) program to the original path.
+   Datebase add new fields, see the file 'upgrade1.x_2.0' in the sql path.
+   You cam use like 'PhpAdmin' to import the file.
+
+
+News 2005/01/25
+2200net Calendar v.1.2
+1. date formate new function add
+2. Very Thanks Knud Haugmark !! Support Danish language file.
+3. Very Thanks Philippe Pascal !! Support Nederlands language file.
+4. fix admin page SESSION bug.
+
+ 
+News 2004/12/19
+2200net Calendar v.1.02
+'Call to undefined function: cal_days_in_month()' error,
+so I remake a new class to fix this problem.
+
+
+News 2004/12/10
+2200net Calendar is an easy calendar system, and it runs on PHP and MySQL.
+2200net Calendar is a free php program for anyone to use under the GPL license.
+Current version onlu support Chinese and English language,
+so I hope you can support other languages to me.
+If you have any good ideas or suggests please tell me.

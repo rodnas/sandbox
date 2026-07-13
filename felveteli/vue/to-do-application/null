@@ -1,0 +1,16 @@
+
+> to-do-app@0.1.0 serve
+> vue-cli-service serve
+
+ INFO  Starting development server...
+ DONE  Compiled successfully in 10549ms10:17:14
+
+
+  App running at:
+  - Local:   http://localhost:8080/ 
+  - Network: http://192.168.2.110:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+Terminate batch job (Y/N)? 

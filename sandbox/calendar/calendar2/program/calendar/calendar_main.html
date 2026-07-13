@@ -1,0 +1,55 @@
+<script language="javascript">   
+function pophtml(htmlurl)
+{
+	var focusok;
+	var newwin=window.open(htmlurl,"popperson","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,top=2,left=2,width=480,height=400");
+	
+	if(focusok) {
+		newwin.focus();
+	}
+	
+	return false;
+}
+</script>
+
+
+<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH=750 BORDER=0 VALIGN="TOP" ALIGN="CENTER">
+	<TR><TD>
+	
+		<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH="100%" BORDER=0 VALIGN="TOP">
+			<TR>
+				<TD WIDTH=90%><FONT ID="font_verdana18" COLOR="#3D3D3D"><B>{V_CURRDATE}</B></FONT></TD>
+				<TD ALIGN="RIGHT">
+				<NOBR>
+				<IMG SRC="mainhtml/{V_THEMEPATH}/pict/sy.gif" VSPACE=5 HSPACE=3 ALIGN="ABSMIDDLE">
+				<FONT ID="font_verdana12" COLOR="#3D3D3D">{plz select yy mm} :</FONT> &nbsp; &nbsp;
+				</NOBR>
+				</TD>	
+				<TD ALIGN="RIGHT">	
+					<SELECT onChange="location.href=this.options[this.selectedIndex].value;">
+						<!-- BEGIN DYNAMIC BLOCK: TABLE1 -->
+						<OPTION VALUE="main.php?po=calendar&op=calendar_main&fm_data[datetime]={V_DATETIME}" {V_SELECT}> {V_DATETIMELIST} --- x {V_TOTNUMS}
+						<!-- END DYNAMIC BLOCK: TABLE1 -->
+					</SELECT>
+				</TD>	
+			</TR>
+		</TABLE>
+	</TD></TR> 
+ 
+	<TR><TD>	
+		<TABLE BGCOLOR="GRAY" CELLPADDING=0 CELLSPACING=1 WIDTH="100%" BORDER=0 VALIGN="TOP">		
+			<TR BGCOLOR="SILVER">
+				<!-- BEGIN DYNAMIC BLOCK: TABLE2 -->
+				<TD ALIGN="CENTER" WIDTH=105><FONT ID="font_verdana12" COLOR="BLACK"><B>{V_WEEK}</B></FONT></TD>
+				<!-- END DYNAMIC BLOCK: TABLE2 -->
+			</TR>
+			
+			<!-- BEGIN DYNAMIC BLOCK: TABLE3 -->
+			<TR>
+				{V_DATEHTMLDATA}
+			</TR> 
+			<!-- END DYNAMIC BLOCK: TABLE3 -->
+ 		</TABLE>
+	</TD></TR>
+ 	
+ </TABLE>

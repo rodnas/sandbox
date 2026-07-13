@@ -1,0 +1,34 @@
+AddPage<=><->1<#>
+SetFont<=>FreeSerif<-><->9<#>
+writeHTML<=><->1<-><#>
+writeHTMLCell<=>80<->0<->0<->0<-><img src='{$dataFromDIM[developPicture]}' border='0'><->0<->0<->0<#>
+SetFont<=>FreeSerif<->B<->16<#>
+writeHTMLCell<=>0<->0<->80<->0<->id: {$dataFromDIM[ugyfelidElem]}<->0<->1<->0<#>
+Cell<=>0<->0<-><->0<->1<->C<->0<->0<#>
+SetFont<=>FreeSerif<->B<->12<#>
+writeHTMLCell<=>0<->0<->80<->0<->Alkuszi Megbízás és Meghatalmazás<->0<->1<->0<#>
+Cell<=>0<->6<-><->0<->1<->C<->0<->0<#>
+SetFont<=>FreeSerif<-><->12<#>
+writeHTML<=><b>Alul?rott</b><->1<-><#>
+MultiCell<=>1<->4<-><->0<->J<->0<->0<#>
+MultiCell<=>80<->6<->{$dataFromDIM[alulirottCimkeElem]}<->LTB<->J<->0<->0<#>
+SetFont<=>FreeSerif<->B<->11<#>
+MultiCell<=>110<->6<->{$dataFromDIM[alulirottAdatElem]}<->RTB<->J<->0<-><#>
+SetFont<=>FreeSerif<->B<->11<#>
+writeHTML<=>{$dataFromDIM[ajanlatSzovegElem]}<->1<-><#>
+Cell<=>0<->0<-><->0<->1<->C<->0<->0<#>
+SetFont<=>FreeSerif<-><->10<#>
+writeHTML<=><br>a <b>Test pdf</b>; c?m: 1074 Budapest, Rák?czi út 52., ?gyf?lszolgálat: 1134 Budapest, R?zsafa utca 13-17, Cg.01-09-360406, ad?szám: 10922444-2-42, PSZ?F enged?ly száma: 167/1994 - a továbbiakban: <b>Alkusz</b>) r?sz?re, az általa ?zemeltetett (www.netrisk.hu, www.ebizt.hu, stb...) online biztos?tási portálokon (továbbiakban: <b>Portál</b>) elhelyezett ?zletszabályzatban (?MF/04/01) foglalt tartalommal, alkuszi megb?zási szerzod?s megköt?s?re. Tudomásul veszem az Alkusz azon táj?koztatását, hogy jelen ajánlatom alapján az alkuszi megb?zási szerzod?s akkor tekintheto l?trejöttnek, ha az Alkusz arra válaszul a jelen megb?zás ?s meghatalmazás k?zhezv?tel?t követoen 48 ?rán bel?l, a Portálon kereszt?l kezdem?nyezett biztos?tási ajánlatt?tel során megadott e-mail c?mre, elfogad? nyilatkozatot tesz.<br><br>{$dataFromDIM[megbizasSzovegElem]}<br><ul>   
+<li type='square' style='line-height: 1.3em'>a biztos?tási szerzod?s(ek) megköt?s?re,</li>
+<li type='square' style='line-height: 1.3em'>a Kártört?neti ?s egy?b igazolások beszerz?s?re,</li>
+<li type='square' style='line-height: 1.3em'>?vfordul?ra tört?no biztos?t?váltás eset?n a fennáll? biztos?tási szerzod?s(ek) felmondására,</li>
+<li type='square' style='line-height: 1.3em'>finansz?rozási szerzod?shez kapcsol?d? biztos?tás eset?n a biztos?tási összeg engedm?nyez?s?re,</li>
+<li type='square' style='line-height: 1.3em'>egyes?leti formában muködo biztos?t? választása eset?n az egyes?leti tagság l?tes?t?s?re vonatkoz?</li>
+<li type='square' style='line-height: 1.3em'>a szem?lyes adataim kezel?s?re vonatkoz? táj?koztatás megismer?s?vel ?s tudomásul v?tel?vel kapcsolatos, valamint</li>
+<li type='square' style='line-height: 1.3em'>az adott biztos?tási szerzod?s megköt?s?hez elo?rt egy?b</li>
+</ul><br>{$dataFromDIM[jognyilatkozatSzovegElem]}<br><br>{$dataFromDIM[meghatalmazasSzovegElem]}<br><br>Az Alkusz szolgáltatását d?jmentesen nyújtja Megb?z? számára.<br><br>Jelen megb?zás visszavonásig ?rv?nyes. A megb?zás visszavonásával egyidejuleg a meghatalmazás is ?rv?ny?t veszti.
+<->1<-><#>
+Cell<=>0<->15<-><->0<->1<->C<->0<->0<#>
+MultiCell<=>90<->4<->Alá?rás dátuma: {$dataFromDIM[keltDatumElem]}<-><->J<->0<->0<#>
+MultiCell<=>100<->4<->______________________________{$dataFromDIM[ugyfelElem]}<->0<->R<->0<-><#>
+writeBarcode<=>11<->26<->30<->10<->C128C<-><-><->1<->{$dataFromDIM[vonalkodElem]}<#>

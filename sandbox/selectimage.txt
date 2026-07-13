@@ -1,0 +1,21 @@
+HTML Code
+
+<label for="some_countries">Straight Forward</label>
+<select name="some_countries" id="some_countries" class="icon-menu">
+<option style="padding-left:0px;" value="">Select a Country</option>
+<option style="background-image:url(flags/usa.png);" value="US">USA</option>
+<option style="background-image:url(flags/india.png)" value="IN">India</option>
+<option style="background-image:url(flags/england.png);" value="UK">England</option>
+<option style="background-image:url(flags/france.png);" value="FR">France</option>
+<option style="background-image:url(flags/germany.png);" value="GE">Germany</option>
+<option style="background-image:url(flags/canada.png);" value="CA">Canada</option>
+<option style="background-image:url(flags/russia.png);" value="RU">Russia</option>
+</select>
+
+CSS
+
+select.icon-menu option {
+background-repeat:no-repeat;
+background-position:bottom left;
+padding-left:30px;
+}

@@ -1,0 +1,50 @@
+04-04-2005
+
+Version 1.10
+
+Added option to display weeks starting on Monday or Sunday
+Updated ReadMe file
+   Added information on calling from another PHP file and
+   specifying options.
+   Added info about first day of week options.
+Added sample 12 month calendar files
+   twelve_month.shtml
+   twelve_month.php
+   twelve_month_2.php
+
+
+07-09-2004
+
+Bumped up version number to 1.0.
+I have had over 1300 downloads since 0.53 released and
+no bug reports so I would say this is no longer a Beta.
+
+01-01-2004 Version 0.53
+
+Fixed bug where cell style would not be defined if the
+day of month equaled today, but month or year were different.
+
+12-31-2003 Version 0.52
+
+Added the ability to specify a calendar relative to the
+current month. See readme file for details.
+
+12-25-2003 Version 0.51
+
+Added optional row with day name abbrieviations. See readme
+file for details on use.
+
+Added ability to specify the display file as an option. You
+can now display multiple calendars on the same page with links
+to different display files.
+
+Changed output format to make reading generated source easier
+to read. Each cell now on one line and the cells indented.
+
+Fixed formatting error - If the last day of the month was a
+Saturday an unneeded table row tag was written.
+
+Revised the script code for better organization
+
+Added comments and lebeled sections to make the use of the
+script clearer.

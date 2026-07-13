@@ -1,0 +1,70 @@
+.title
+{
+	border: 1px solid #000000;
+	font-size: 20px;
+	background-color: #C2CBFB;
+}
+
+.success
+{
+	background-color: #42D44F;
+}
+
+.failure
+{
+	background-color: #D44242;
+}
+
+.failure, .success
+{
+	text-align: center;
+	width: 35%;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.big_box
+{
+	width: 80%;
+	border-collapse: collapse;
+	padding: 15px;
+	border: 1px solid #000000;
+}
+
+.installation_success
+{
+	background-color: #EFEFEF;
+	color: #008800;
+	font-weight: bold;
+}
+
+.title_summary
+{
+	background-color: #C0C0C0;
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.title_errors
+{
+	background-color: #EFEFEF;
+	font-weight: bold;
+}
+
+.title_success
+{
+	background-color: #EFEFEF;
+	color: #008800;
+	font-weight: bold;
+}
+
+.red
+{
+	color: #FF0000;
+}
+
+.green
+{
+	color: #008800;
+}

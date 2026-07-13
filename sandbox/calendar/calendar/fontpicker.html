@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Font Selector</title>
+	<style>
+		.s  { width:181 }
+		.text { color:#000000; text-decoration: none}
+		a:hover.text {color:#000000; text-decoration: none}
+	</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" background="../admin/images/bg.jpg"   leftmargin="5" topmargin="5" marginheight="5" marginwidth="5" onload="P.C(P.initTable)">
+<table cellpadding=0 cellspacing=2 border=0 width=70>
+<form>
+<tr><td class="text" align="center">Font Family
+<select name="type" onchange="P.C(this.selectedIndex)" class="s">
+	<option>Win</option>
+	<option>Mac</option>
+	<option>Generic</option>
+</select>
+</td></tr>
+<tr><td align="center">
+<script language="JavaScript">
+	var P = opener.FSelector;
+	onload = "P.show(P.initTable)";
+	document.forms[0].elements[0].selectedIndex = P.initTable;
+	P.draw(window, document);
+//	window.resizeTo(200,300);
+</script>
+</td></tr>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>ACal Manual</title>
+</head>
+<body>
+<div style="text-align: center;">
+<h1>ACal 2.2 Manual</h1>
+<ol style="text-align: left;">
+  <li><a href="#Quick_Installation">Quick Installation</a></li>
+  <li><a href="#Manual_Installation">Manual Installation</a></li>
+  <li><a href="#Upgrading">Upgrading</a><br>
+  </li>
+  <li><a href="#Troubleshooting">Troubleshooting</a></li>
+  <li><a href="#Embedding">Embedding</a></li>
+  <li><a href="#More_Information">More Information</a></li>
+</ol>
+<div style="text-align: left;">
+<hr style="width: 100%; height: 2px;">
+<h2><a name="Quick_Installation"></a>Quick Installation</h2>
+We at the ACal Project try to make your initial experience with the
+ACal calendar as enjoyable as possible. Here's some step by step
+instructions if you need help.<br>
+<ol>
+  <li>Expand the downloaded file. (Example: ACal-2.0.tar.gz)</li>
+  <li>Inside the new folder you'll find this manual and the license. If
+you want to know what you're getting into read the License and if not
+continue.</li>
+  <li>Upload or copy the calendar folder to your web server.</li>
+  <li>(If you are using Windows you can skip this part) Set the
+permissions of the calendar folder so that anyone can write to it. You
+can either use the chmod command or in Mac OS X using the Info panel.
+All good FTP client have a chmod feature as well.</li>
+  <li>Go to it in your web browser and complete the installation by
+running the web based installer.</li>
+</ol>
+If you get any errors consult the Troubleshooting section.<br>
+<h2><a name="Manual_Installation"></a>Manual Installation</h2>
+If you just can't get the installer to work or simply want to install
+by hand. Here's some information on how to accomplish that.<br>
+<ol>
+  <li>Follow Quick Installation instruction up to step 4.</li>
+  <li>Make a folder named data and one named uploads.</li>
+  <li>Chmod if needed so anyone can write to the new folders.</li>
+  <li>In the installer&gt;contents folder copy style.css, vault.php,
+and version.php to your calendar folder.</li>
+  <li>Chmod if needed to anyone can write to the 3 new files.</li>
+  <li>Copy prefs.php to the data folder which is inside your calendar
+folder. Chmod it as well.</li>
+  <li>Go to the calendar in your web browser.</li>
+  <li>Click on the login link at the bottom.</li>
+  <li>Do not fill in anything and press the Login button.</li>
+  <li>Add a new user.<br>
+  </li>
+</ol>
+You should be done now. Note that after you add a new user you will no
+longer be able to login with a blank user name and password.<br>
+<h2><a name="Upgrading"></a>Upgrading</h2>
+Currently to upgrade your calendar you will need to download the latest
+version and simply replace your old&nbsp; calendar with the new one,
+except for the data folder and the txt files inside (prefs.php should
+be replaced), and your header and footer if you are using them.<br>
+<span style="font-style: italic;">A better solution is being developed
+where the calendar will be able to self-update.<br>
+</span><span style="font-style: italic;"></span>
+<h2><a name="Troubleshooting"></a>Troubleshooting</h2>
+<h3 style="margin-left: 40px;">Errors when installing</h3>
+Make sure you set the permissions of the calendar folder so that anyone
+can write to it, by using chmod or your FTP client.<br>
+If it still doesn't work check whether or not you have safe mode turned
+on. If it is on you have to do a manual installation.<br>
+<h2><a name="Embedding"></a>Embedding</h2>
+Embedding the ACal calendar is getting better with each release. It is
+very easy and does not require much skill at all. Here's how to do it.<br>
+<h3>Using PHP:</h3>
+&nbsp;<span style="font-style: italic;">Before you try&nbsp; embedding
+using PHP, take a look at the
+example in the example folder. Then follow these instructions.<br>
+<br>
+</span>
+<div style="margin-left: 40px;"> In between the
+&lt;head&gt;&lt;/head&gt; tags copy and edit this
+code as needed:<span style="font-family: monospace;"></span><br>
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&lt;?php</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; $view = "</span><span
+ style="font-weight: bold; text-decoration: underline; font-family: monospace;">day</span><span
+ style="font-family: monospace;">"; // Can be month or day.</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; $path = "</span><span
+ style="font-weight: bold; text-decoration: underline; font-family: monospace;">path/to/calendar/</span><span
+ style="font-family: monospace;">"; // Relative or absolute path to
+calendar folder. Must have a trailing slash.</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; </span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; // Do not
+edit the rest unless you know what you're doing</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; echo
+'&lt;link rel="stylesheet" title="Default" type="text/css" href="' .
+$path . 'style.css" /&gt;';</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; if ($view ==
+'month' || isset($_GET['view'])) {</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; echo '&lt;script src="' . $path . 'e_edit.js"
+type="text/javascript"&gt;&lt;/script&gt;';</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; }</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">?&gt;</span></span><br>
+<span style="font-family: monospace;"> </span>You must edit the bold
+underlined text. Where it says <span
+ style="font-weight: bold; text-decoration: underline;">day</span> you
+can change it to <span
+ style="font-weight: bold; text-decoration: underline;">month</span>.
+And you must change the path to the real path to your calendar folder.<br>
+<br>
+Then anywhere in the body, copy this code but do not edit it.<span
+ style="font-family: monospace;"></span><br>
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&lt;?php</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">// DO NOT EDIT</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">if (!isset($_GET['view'])) {</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; include
+$path . 'embed/' . $view . '.php';</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">}</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">else {</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">&nbsp;&nbsp;&nbsp; include
+$path . 'embed/' . $_GET['view'] . '.php';</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">}</span></span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;"> <span
+ style="font-family: monospace;">?&gt;</span></span><br>
+<span style="font-family: monospace;"><span
+ style="font-family: monospace;"></span></span></div>
+<span style="font-family: monospace;"><span
+ style="font-family: monospace;"> </span></span><span
+ style="font-family: monospace;"><span style="font-family: monospace;"></span></span>
+<h3>Using Frames:</h3>
+You can also combine the calendar with your web site using frames.
+Here's an example.<br>
+<div style="margin-left: 40px;"><span style="font-family: monospace;">&lt;frameset
+cols="100,*"&gt;<br>
+&nbsp;&lt;frame src="yourpage.html" name="main" /&gt;<br>
+&nbsp;&lt;frame src="path/to/calendar/" name="calendar" /&gt;<br>
+&lt;/frameset&gt;<br>
+<br>
+It will create a left frame 100 pixels wide and a right frame using the
+remaining space containing the calendar.<br>
+</span><span style="font-family: monospace;"></span>
+</div>
+<h2><a name="More_Information"></a>More Information</h2>
+For more information see the following:<br>
+<ul>
+  <li><a href="http://acalproj.sourceforge.net">ACal Project Web Site</a></li>
+  <li><a href="http://sourceforge.net/projects/acalproj/">ACal Project
+Page</a></li>
+  <li><a href="http://awiebe.blogdns.net/blog/search.php?query=ACal">Development
+Weblog</a><br>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

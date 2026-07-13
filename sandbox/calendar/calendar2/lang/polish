@@ -1,0 +1,113 @@
+admin page title|||Administrator Login Page
+admin page manage|||Admin manage page
+admin login|||Admin login
+admin account|||Login account
+admin password|||Login password
+login|||Login
+login error|||Pleaser relogin !!
+submit|||Submit
+login complete|||Login completely !!
+select language|||Select language
+err id|||Error : Login ID error !!
+err psd|||Error : Password error !!
+logout msg|||You logout system, please relogin !!
+redirect login page|||will redirect to login page, please input account and password again !!
+sun|||SUN
+mon|||MON
+tue|||TUE
+wed|||WED
+thu|||THU
+fri|||FRI
+sat|||SAT
+January|||January
+February|||February
+March|||March
+April|||April
+May|||May
+June|||June
+July|||July
+August|||August
+September|||September
+October|||October
+November|||November
+December|||December
+reset|||Reset
+cancel|||Cancel
+add data|||Add data
+add one|||Add new one
+content|||Content
+date|||Date
+week|||Week
+close|||Close
+no data|||No data !!
+title|||Title
+rank|||Rank
+plz dont empty|||Please do not leave empty !!
+data add completed|||Data add completed !!
+del edit data|||Edit / Delete data
+mksue del data|||Make sure delete this data ?!
+update data|||Update data
+update data completed|||Update data completed !!
+del data completed|||Delete data completed !!
+no data update|||No data update ...
+login failure msg|||Login failure, please login again !!
+err cookie|||cookie error, please enable your browser cookie.
+
+calendar config|||Calendar Config
+sender|||Sender
+plz ipt title|||Please input title
+plz ipt content|||Please input content
+rank err|||Rank error
+del this data info|||Delete this data !!
+setup date|||Setup date ( ex : <B>dd-mm-yyyy</B> )
+other month add|||Add new message
+date error|||Date error !!
+date range|||Date range
+date range error|||Date range error !!
+
+admin psd manage|||Admin password manage
+new password error|||New password error, please input again !
+password confirm error|||Password confirm error, please input again !!
+please input orininal password|||Please input original password !
+new password|||New password
+confirm password|||Confirm new password
+orininal password|||Orininal password
+orininal password error|||Orininal password error, please input again !!
+no data update|||No data updated !!
+orgpsd or newpsd error|||Orininal password or New password error, Please input aagain !!
+psd changed relogin again|||New password config completely, please relogin again with new password !!
+
+website common manage|||Website common config
+edit website common config|||Edit website data
+website name|||Website name
+website url|||Website URL
+website email|||Website email
+website lang|||Website language
+website country|||Website country code
+homepage top message|||Homepage top message
+foot message|||Page bottom message
+plz ipt sitename|||Please input website name !!
+plz ipt site url|||Please input website URL !!
+plz ipt site email|||Please input website email !!
+plz ipt home msg|||Please input Homepage top message !!
+plz ipt foot msg|||Please input Page bottom message !!
+plz ipt adminid|||Error : please input admin login ID again !!
+time type|||Date/Time type
+first week name|||First week name
+theme style|||Theme style
+admin login name|||Admin login name
+
+timezone manage|||Timezone manage
+current system time|||Current system DateTime
+
+admin page|||Admin page
+system time|||System ime
+logout|||Logout
+manage menu|||Manage Menu
+web cfg|||Website Config
+calendar config|||Calendar Config
+timezone config|||System Time
+admin psd manage|||Manage password
+
+calendar|||Calendar
+plz select yy mm|||Please choice

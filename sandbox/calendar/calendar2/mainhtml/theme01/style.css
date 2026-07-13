@@ -1,0 +1,97 @@
+DIV.MNBOX { BACKGROUND : #FFF; BORDER : 1PX SOLID #DDDDDD; MARGIN : 3px 0px 3px 0px; PADDING : 2px; }
+
+#font_arial08			{font-size: 8px; font-family:arial; line-height:150%;}
+#font_arial09			{font-size: 9px; font-family:arial; line-height:150%;}
+#font_arial10			{font-size:10px; font-family:arial; line-height:160%;}
+#font_arial11			{font-size:11px; font-family:arial; line-height:160%;}
+#font_arial12			{font-size:12px; font-family:arial; line-height:160%;}
+#font_arial13			{font-size:13px; font-family:arial; line-height:160%;}
+#font_arial14			{font-size:14px; font-family:arial; line-height:160%;}
+#font_arial15			{font-size:15px; font-family:arial; line-height:160%;}
+#font_arial16			{font-size:16px; font-family:arial; line-height:160%;}
+#font_arial17			{font-size:17px; font-family:arial; line-height:160%;}
+#font_arial18			{font-size:18px; font-family:arial; line-height:160%;}
+#font_arial19			{font-size:19px; font-family:arial; line-height:160%;}
+#font_arial20			{font-size:20px; font-family:arial; line-height:170%;}
+#font_arial22			{font-size:22px; font-family:arial; line-height:170%;}
+#font_arial24			{font-size:24px; font-family:arial; line-height:170%;}
+#font_arial26			{font-size:26px; font-family:arial; line-height:170%;}
+#font_arial28			{font-size:28px; font-family:arial; line-height:170%;}
+#font_arial30			{font-size:30px; font-family:arial; line-height:170%;}
+
+#font_verdana08			{font-size: 8px; font-family:Verdana; line-height:150%;}
+#font_verdana09			{font-size: 9px; font-family:Verdana; line-height:150%;}
+#font_verdana10			{font-size:10px; font-family:Verdana; line-height:160%;}
+#font_verdana11			{font-size:11px; font-family:Verdana; line-height:160%;}
+#font_verdana12			{font-size:12px; font-family:Verdana; line-height:160%;}
+#font_verdana13			{font-size:13px; font-family:Verdana; line-height:160%;}
+#font_verdana14			{font-size:14px; font-family:Verdana; line-height:160%;}
+#font_verdana15			{font-size:15px; font-family:Verdana; line-height:160%;}
+#font_verdana16			{font-size:16px; font-family:Verdana; line-height:160%;}
+#font_verdana17			{font-size:17px; font-family:Verdana; line-height:160%;}
+#font_verdana18			{font-size:18px; font-family:Verdana; line-height:160%;}
+#font_verdana19			{font-size:19px; font-family:Verdana; line-height:160%;}
+#font_verdana20			{font-size:20px; font-family:Verdana; line-height:170%;}
+#font_verdana22			{font-size:22px; font-family:Verdana; line-height:160%;}
+#font_verdana24			{font-size:24px; font-family:Verdana; line-height:170%;}
+#font_verdana26			{font-size:26px; font-family:Verdana; line-height:170%;}
+#font_verdana28			{font-size:28px; font-family:Verdana; line-height:170%;}
+#font_verdana30			{font-size:30px; font-family:Verdana; line-height:170%;}
+
+A.link_type1:link		{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_type1:visited	{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_type1:active		{COLOR:#FF0000; TEXT-DECORATION:underline}
+A.link_type1:hover		{COLOR:#FF0000; TEXT-DECORATION:underline}
+
+A.link_type2:link		{COLOR:#8168E1; TEXT-DECORATION:underline}
+A.link_type2:visited	{COLOR:#8168E1; TEXT-DECORATION:underline}
+A.link_type2:active		{COLOR:#F7B122; TEXT-DECORATION:underline}
+A.link_type2:hover		{COLOR:#F7B122; TEXT-DECORATION:underline}
+
+A.link_type3:link		{COLOR:#FFFFFF; TEXT-DECORATION:underline}
+A.link_type3:visited	{COLOR:#FFFFFF; TEXT-DECORATION:underline}
+A.link_type3:active		{COLOR:#F7B122; TEXT-DECORATION:underline}
+A.link_type3:hover		{COLOR:#F7B122; TEXT-DECORATION:underline}
+
+.menu_lf_title			{font-size:13px; color:#FFFFFF; background:#4F2783; font-family:Verdana; line-height:170%;}
+.menu_lf_text			{font-size:11px; color:#4F2783; background:#EEECF4; font-family:Verdana; line-height:170%;}
+.menu_lf_bg				{background:#FFFFFF;}
+.menu_lf_bord			{background:#4F2783;}
+A.link_menu_lf:link		{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_menu_lf:visited	{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_menu_lf:active	{COLOR:#FF0000; TEXT-DECORATION:underline}
+A.link_menu_lf:hover	{COLOR:#FF0000; TEXT-DECORATION:underline}
+
+.page_headnavbar01		{font-size:14px; background:#4F2783; color:#FFFFFF; font-family:Verdana; line-height:170%;}
+.page_headbotmmsg01		{font-size:10px; background:#4F2783; color:#FFFFFF; font-family:Verdana; line-height:170%;}
+.page_headline01		{background:#003366;}
+.page_headline02		{background:#999999;}
+.page_headtitle			{font-size:20px; color:#4F2783; font-family:Verdana; line-height:170%;}
+.page_msg01				{font-size:12px; color:#3D3D3D; font-family:Verdana; line-height:160%;}
+.page_msg02				{font-size:10px; color:#666666; font-family:Verdana; line-height:160%;}
+
+.table01_tbtitle		{font-size:11px; color:#FFFFFF; background:#4F2783; font-family:Verdana; line-height:170%;}
+.table01_tbline01		{color:#3D3D3D; background:#3D3D3D;}
+.table01_tbline02		{color:#D4D4D4; background:#D4D4D4;}
+.table01_text01			{font-size:11px; color:#4F2783; background:#FFFFFF; font-family:Verdana; line-height:170%;}
+.table01_text02			{font-size:11px; color:#4F2783; background:#EEECF4; font-family:Verdana; line-height:170%;}
+.table01_text03			{font-size:10px; color:#3D3D3D; background:#FFFFFF; font-family:Verdana; line-height:170%;}
+A.link_table01:link		{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_table01:visited	{COLOR:#4F2783; TEXT-DECORATION:underline}
+A.link_table01:active	{COLOR:#FF0000; TEXT-DECORATION:underline}
+A.link_table01:hover	{COLOR:#FF0000; TEXT-DECORATION:underline}
+
+.table02_tbtitle		{font-size:11px; color:#FFFFFF; background:#025999; font-family:Verdana; line-height:170%;}
+.table02_tbline01		{color:#3D3D3D; background:#AAAAAA;}
+.table02_tbline02		{color:#D4D4D4; background:#3D3D3D;}
+.table02_text01			{font-size:12px; color:#FFFFFF; background:#4F2783; font-family:Verdana; line-height:170%;}
+.table02_text02			{font-size:12px; color:#3D3D3D; background:#EEECF4; font-family:Verdana; line-height:170%;}
+.table02_text03			{font-size:12px; color:#4F2783; background:#FFFFFF; font-family:Verdana; line-height:170%;}
+
+.formfont_type01		{font-size:13px; font-family:Verdana;}						 
+.formbutn_type01		{cursor:hand; font-size:13px; font-weight:bold; font-family:Verdana;}
+
+.boxcolor_empty			{background:#D4D4D4;}
+.boxcolor_active		{background:#FFFFFF;}
+.boxcolor_sunday		{background:#F5BABB;}
+.boxcolor_saturday		{background:#D6E4A0;}

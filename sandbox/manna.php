@@ -1,0 +1,10 @@
+
+<?php
+$str = 'This is an encoded string';
+//echo base64_encode($str);
+
+
+$str = 'UnnFkWZtxZFlOiBYw7ZmbcO2YXfDvHgsIHVidGwgcXJ4w7NxYnlnw6F5IHp2YXhyZyA6KQ 0KRmdub3Z5IHpoYXhubnHDs3YgdcOhZ2fDqWUgcnRsIHRsYmVmbmEgc3J3ecWRccWRI HDDqXRhw6l5DQpYcnl5cnpyZiwgemJxcmVhIHpoYXhueMO2ZWFscm1yZw0Kw4llcXJ4cm YsIGnDoXlnYm1uZ2JmIHNyeW5xbmdieA0KRm53w6FnIHluY2diYw0KUGZicGbDsywgem5 mZm3DoW1mLCBmY2JlZ2/DqWV5cmcsIGZnby4gDQpOeMOhZSBubWJhYW55diB6aGF4 bnhybXHDqWZ2IHlydXJnxZFmw6l0DQpVYnpyIEJzc3ZwciB5cnVyZ8WRZsOpdA0KRm1ue HpudiBnw6F6YnRuZ8OhZg0K ';
+echo base64_decode($str);
+
+?>

@@ -1,0 +1,102 @@
+<script language="JavaScript">
+<!--
+function chechdata(objForm)
+{	
+	var psdPattern   = /^[a-zA-Z0-9]{2,10}$/;
+	var namePattern  = /^[a-zA-Z0-9]{2,10}$/;
+	var emailPattern = /^([a-zA-Z0-9_-_.])+@+[a-zA-Z0-9_-_.]/;
+	
+	if ( objForm.newpsd.value == "" ) {
+		alert ('{new password error}');
+		objForm.newpsd.focus();
+		return false;
+	}  
+	
+	if (objForm.newpsd.value != "" || objForm.repsd.value != "") {
+		if ( !psdPattern.test(objForm.newpsd.value) ) {
+			alert ('{new password error}');
+			objForm.newpsd.focus();
+			return false;
+		}
+		
+		if ( objForm.newpsd.value != objForm.repsd.value ) {
+			alert ('{password confirm error}');
+			objForm.repsd.focus();
+			return false;
+		}  
+	}
+	
+	if ( !psdPattern.test(objForm.orgpsd.value) ) {
+		alert ('{please input orininal password}');
+		objForm.orgpsd.focus();
+		return false;
+	}
+	
+	return true;
+}
+
+
+//-->
+</script>
+
+<form ACTION="admin.php" method="POST" id="form1" name="form1" onsubmit="return chechdata ( this ) ;">
+
+<TABLE WIDTH="98%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+	
+	<!-- HEAD TITLE START -->
+	<TR><TD>
+		<IMG SRC="pict/passwd.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">&nbsp;
+		<FONT COLOR="#666666" ID="font_verdana20"><B>{admin psd manage}</B></FONT>
+	</TD></TR>
+	
+	<TR><TD BACKGROUND="pict/dot.gif"><IMG SRC="pict/spacer.gif" HEIGHT=2 BORDER=0></TD></TR>
+	<TR><TD><IMG SRC="pict/spacer.gif" height=20></TD></TR>	   
+	<!-- HEAD TITLE END -->
+	  
+	<TR><TD>
+		<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER"> 
+			
+			<TR><TD>
+				<TABLE CELLPADDING="5" CELLSPACING="0" BORDER="0" ALIGN="CENTER"> 
+					<TR>
+						<TD><FONT ID="font_verdana12" COLOR="#3D3D3D">{new password}</FONT></TD>
+						<TD>
+							<INPUT ID="newpsd" TYPE="PASSWORD" MAXLENGTH=10 NAME="fm_data[psd]"
+							 CLASS="formfont_type01" STYLE="width:150px; border:1px solid GRAY">
+						</TD>
+					</TR>
+					<TR>
+						<TD><FONT ID="font_verdana12" COLOR="#3D3D3D">{confirm password}</FONT></TD>
+						<TD>
+							<INPUT ID="repsd"  TYPE="PASSWORD" MAXLENGTH=10 NAME="rpsd"
+							 CLASS="formfont_type01" STYLE="width:150px; border:1px solid GRAY">
+						</TD>
+					</TR>
+					<TR>
+						<TD><FONT ID="font_verdana12" COLOR="#3D3D3D">{orininal password}</FONT></TD>
+						<TD>
+							<INPUT ID="orgpsd" TYPE="PASSWORD" MAXLENGTH=10 NAME="fm_data[opsd]"
+							 CLASS="formfont_type01" STYLE="width:150px; border:1px solid GRAY">
+						</TD>
+					</TR>
+				</TABLE>
+			</TD></TR>
+			
+			<TR><TD ALIGN="CENTER">
+				&nbsp;<BR>
+				<INPUT TYPE="SUBMIT" VALUE="{update data}" CLASS="formbutn_type01"
+				 STYLE="background:silver; width:150px;">
+				&nbsp; &nbsp;
+				<input type="button" value="{close}" CLASS="formbutn_type01"
+				 STYLE="background:silver; width:150px;" onClick='window.close();'>
+			</TD></TR> 
+			
+			<TR><TD><IMG SRC="pict/spacer.gif" height=30></TD></TR>
+			
+		</TABLE>
+	</TD></TR>
+
+</TABLE>
+<INPUT TYPE="HIDDEN" NAME="po" VALUE="adpasswd">
+<INPUT TYPE="HIDDEN" NAME="op" VALUE="adpasswd_editsave">
+</FORM>

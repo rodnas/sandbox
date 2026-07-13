@@ -1,0 +1,60 @@
+body {/*background: #80c1ff;*/}
+table
+	{
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	border-collapse: collapse;
+	}
+td
+	{
+	padding: 2px;
+	vertical-align: text-top; 
+/*	min-width: 50px;   */
+	}
+table.cal
+	{
+	background:#80c1ff;
+	width: 14em;
+	border: thin solid black;
+	border-collapse: collapse;
+	empty-cells: show;
+	vertical-align: text-top;
+	font-size: 9px;
+        margin-top: 0px;
+        margin-bottom: auto;
+	vertical-align:top;
+	}
+td.calcell
+	{
+	width: 2em;
+	height: 2em;
+	border: thin solid black;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: middle;
+	vertical-align:top;
+	min-width:55px;
+	}
+td.today
+	{
+	width: 2em;
+	height: 2em;
+	border: thin solid black;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: silver;
+	color: red;
+	vertical-align: middle;
+	vertical-align:top;
+	}
+th.cal
+	{
+	width: 14em;
+	text-align: center;
+	height: 2em;
+	border: thin solid black;
+	border-collapse: collapse;
+	font-size: 14px;
+	}

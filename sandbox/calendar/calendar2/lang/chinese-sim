@@ -1,0 +1,113 @@
+admin page title|||管理者登入页面
+admin page manage|||管理者页面
+admin login|||管理者登入
+admin account|||登入帐号
+admin password|||登入密码
+login|||登入
+login error|||请重新登入 !!
+submit|||确认送出
+login complete|||登入完成 !!
+select language|||选择语系
+err id|||错误 : 登入帐号错误 !!
+err psd|||错误 : 密码错误 !!
+logout msg|||请重新登入系统 !!
+redirect login page|||即将转换登入页面, 请重新登入 !!
+sun|||日
+mon|||一
+tue|||二
+wed|||三
+thu|||四
+fri|||五
+sat|||六
+January|||一月
+February|||二月
+March|||三月
+April|||四月
+May|||五月
+June|||六月
+July|||七月
+August|||八月
+September|||九月
+October|||十月
+November|||十一月
+December|||十二月
+reset|||重设
+cancel|||取消
+add data|||新增资料
+add one|||新增一笔资料
+content|||内容
+date|||日期
+week|||周
+close|||关闭
+no data|||目前没有资料 !!
+title|||标题
+rank|||排序
+plz dont empty|||有标示处请勿空白 !!
+data add completed|||资料新增完成 !!
+del edit data|||编删资料
+mksue del data|||确认删除此笔资料吗 !?
+update data|||更新资料
+update data completed|||更新资料完成 !!
+del data completed|||指定的资料删除完成 !!
+no data update|||没有任何资料变动 ...
+login failure msg|||登入失败, 请重新登入
+err cookie|||您的浏览器 cookie 功能未开启, 请设定开启状态\n\n设定方式请洽询您的浏览器软件厂商
+
+calendar config|||行事历内容设定
+sender|||发送者
+plz ipt title|||请输入标题
+plz ipt content|||请输入内容
+rank err|||排序错误
+del this data info|||确认删除资料 ?!
+setup date|||重设日期 ( 例如 : <B>dd-mm-yyyy</B> )
+other month add|||其它年月新增资料
+date error|||资料错误 !!
+date range|||日期范围
+date range error|||日期范围错误
+
+admin psd manage|||管理者密码管理
+new password error|||新密码设定错误, 请重新设定 !
+password confirm error|||密码确认错误, 请重新设定 !
+please input orininal password|||请输入原始密码 !
+new password|||新的密码
+confirm password|||确认密码
+orininal password|||原始密码
+orininal password error|||原始密码错误, 请重新输入 !
+no data update|||没有任何资料更新 !
+orgpsd or newpsd error|||原始密码或新密码错误, 请重新确认后输入 !
+psd changed relogin again|||新密码设定完成, 请以新密码重新登入 !
+
+website common manage|||网站一般设定管理
+edit website common config|||编辑网站资料
+website name|||网站名称
+website url|||网站 URL
+website email|||网站 email
+website lang|||网站语系
+website country|||国别
+homepage top message|||首页顶端讯息
+foot message|||页底讯息
+plz ipt sitename|||请输入网站名称 !!
+plz ipt site url|||请输入网站 URL !!
+plz ipt site email|||请输入网站 email !!
+plz ipt home msg|||请输入网站首页顶端讯息 !!
+plz ipt foot msg|||请输入网站页底讯息 !!
+plz ipt adminid|||格式错误 : 请重新输入管理者帐号 !!
+time type|||日期显示格式
+first week name|||每周起始星期
+theme style|||网站样式
+admin login name|||管理者登入帐号
+
+timezone manage|||网站时区管理
+current system time|||目前网站时间
+
+admin page|||管理页面
+system time|||目前时间
+logout|||注销
+manage menu|||主选单
+web cfg|||网站一般设定
+calendar config|||行事历内容设定
+timezone config|||目前系统时间
+admin psd manage|||密码管理
+
+calendar|||行事历
+plz select yy mm|||请选择

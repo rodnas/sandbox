@@ -1,0 +1,41 @@
+.error {
+ background-image: url("images/bg.png");
+ border: 2px solid #BC4D4D;
+ width: 320px;
+ margin-left: 30px;
+ padding: 5px;
+ margin-bottom: 8px;
+ color: red;
+}
+
+.form {
+ background-image: url("images/bg.png");
+ width: 320px;
+ margin-left: 30px;
+ padding: 8px;
+ border: 2px solid #B8C7E2;
+ margin-bottom: 10px;
+ margin-top: 2px;
+}
+
+.head {
+ border-bottom: 1px solid black;
+ margin-bottom: 5px;
+ padding-left: 10px;
+}
+
+.head span {
+ font-size: 40px;
+ color: #4565A1;
+ font-family: Georgia, Times New Roman;
+}
+
+body {
+ border-left: 1px solid black;
+ border-right: 1px solid black;
+ border-bottom: 1px solid black;
+}
+
+img {
+ border: none 0px;
+}

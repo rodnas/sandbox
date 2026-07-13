@@ -1,0 +1,131 @@
+<HTML>
+	<META NAME="pragma" CONTENT="no-cache">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<HEAD>
+	<TITLE>{admin page title}</TITLE>
+</HEAD>
+
+<script>
+if ( !navigator.cookieEnabled ) {
+	alert("{err cookie}");
+}
+</script>
+
+<script language="JavaScript">
+<!--
+
+function chechdata(objForm)
+{
+	var digitPattern = /^[0-9]{1,10}$/;
+	var psdPattern   = /^[a-zA-Z0-9]{2,10}$/;
+	var telPattern   = /^[0-9][0-9-#]{2,}$/;
+	var accPattern   = /^[a-zA-Z0-9][a-zA-Z0-9_]{2,20}$/; 
+	var emailPattern = /^([a-zA-Z0-9_-_.])+@+[a-zA-Z0-9_-_.]/;
+	
+	if ( !accPattern.test(objForm.acc.value)) {
+		alert ('{err id}');
+		objForm.acc.focus();
+		return false;
+	}  
+	
+	if ( objForm.psd.value.length < 1 || !psdPattern.test(objForm.psd.value)) {
+		alert ('{err psd}');
+		objForm.psd.focus();
+		return false;
+	}   
+	
+	return true;
+}
+
+
+function changWebLang(strLangCode)
+{
+	window.location = "admin.php?{V_SESSIONKEY}_lang=" + strLangCode;
+}
+
+
+//-->
+</script>
+
+<link rel=stylesheet type="text/css" href="mainhtml/{V_THEMEPATH}/style.css">
+<BODY BGCOLOR="#0D4B6C" leftmargin=0 topmargin=0 marginheight=0 marginwidth=0>
+<CENTER>
+
+<FORM ACTION="admin.php" METHOD="POST" id="form1" name="form1" onsubmit="return chechdata(this);">
+
+<TABLE WIDTH="100%" ALIGN="CENTER" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+	
+	<TR><TD BGCOLOR="#626162"><IMG SRC="pict/adlogo01.jpg" BORDER=0></TD></TR>	
+	<TR><TD BGCOLOR="#3D3D3D"><IMG SRC="pict/spacer.gif" HEIGHT=1></TD></TR>
+	
+	<TR><TD><IMG SRC="pict/spacer.gif" HEIGHT=5></TD></TR>
+	<TR><TD BGCOLOR="#0D4B6C" ALIGN="CENTER">
+		<FONT COLOR="#F4F4F4" ID="font_verdana20"><B>{admin page manage}</B></FONT>
+	</TD></TR> 
+	<TR><TD><IMG SRC="pict/spacer.gif" HEIGHT=5></TD></TR>	
+	
+	<TR><TD BGCOLOR="SILVER">
+		<TABLE ALIGN="CENTER" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+			<TR><TD COLSPAN=2 ALIGN="CENTER">
+				<IMG SRC="pict/spacer.gif" HEIGHT=30>
+			</TD></TR>
+			
+			<!--
+			<TR>
+				<TD><FONT COLOR="#3D3D3D" ID="font_verdana12"><B>{select language} :</B></FONT> &nbsp; </TD>
+				<TD>
+					<SELECT ID="lang" NAME="{V_SESSIONKEY}_lang"
+					 STYLE="width:200px; font-size:13px; font-family:verdana; border:1px solid #55670C"
+					 onChange='changWebLang(this.options[this.selectedIndex].value);'>
+					 {V_STROPTION}
+					</SELECT>
+				</TD>
+			</TR>
+			//-->
+			
+			
+			<TR>
+				<TD><FONT COLOR="#3D3D3D" ID="font_verdana12"><B>{admin account}</B> :&nbsp;</FONT></TD>
+				<TD>
+					<INPUT ID="acc" TYPE="TEXT" MAXLENGTH=15 NAME="fm_data[acc]"
+					 CLASS="formfont_type01"
+					 STYLE="width:150px; border:1px solid #55670C">
+				</TD>
+			</TR>
+			<TR>
+				<TD><FONT COLOR="#3D3D3D" ID="font_verdana12"><B>{admin password}</B> :&nbsp;</FONT></TD>
+				<TD>
+					<INPUT ID="psd" TYPE="PASSWORD" MAXLENGTH=15 NAME="fm_data[psd]"
+					 CLASS="formfont_type01"
+					 STYLE="width:150px; border:1px solid #55670C">
+				</TD>
+			</TR>
+			
+			<TR><TD COLSPAN=2><IMG SRC="pict/spacer.gif" HEIGHT=20></TD></TR>   
+			<TR><TD COLSPAN=2 ALIGN="CENTER">
+				<INPUT TYPE="SUBMIT" VALUE="{login}" CLASS="formbutn_type01"				 
+				 STYLE="width:150px; background:#0D4B6C; color:#FFFFFF;">
+				<BR>
+				<IMG SRC="pict/spacer.gif" HEIGHT=10><BR>
+				<FONT COLOR="RED" ID="font_verdana13"><B>{V_LOGINFAILMSG}</B></FONT><BR>
+				<IMG SRC="pict/spacer.gif" HEIGHT=10> 
+			</TD></TR>
+
+		</TABLE>
+	</TD></TR>
+	
+	<TR><TD ALIGN="CENTER">   
+		&nbsp;<BR>
+		<FONT ID="font_verdana10" COLOR="#D4D4D4">
+		Calendar Syatem<BR>
+		Created by Kevin 2003 ~ 2006
+		</FONT>
+		&nbsp;<P>
+	</TD></TR>
+</TABLE>
+  
+<INPUT ID="loginact" TYPE="HIDDEN" NAME="fm_data[loginact]" VALUE="login">
+</FORM>
+
+</CENTER></BODY>
+</HTML>

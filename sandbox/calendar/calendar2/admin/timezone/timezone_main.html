@@ -1,0 +1,46 @@
+<FORM NAME="timezone" ACTION="admin.php" METHOD="POST" onsubmit="return check(this)">
+<TABLE WIDTH="98%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+	
+	<!-- HEAD TITLE START -->
+	<TR><TD>
+		<IMG SRC="pict/timezone.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">&nbsp;
+		<FONT COLOR="#666666" ID="font_verdana20"><B>{timezone manage}</B></FONT>
+	</TD></TR>
+	
+	<TR><TD BACKGROUND="pict/dot.gif"><IMG SRC="pict/spacer.gif" HEIGHT=2 BORDER=0></TD></TR>
+	<TR><TD><IMG SRC="pict/spacer.gif" height=20></TD></TR>	   
+	<!-- HEAD TITLE END -->
+	
+	
+	<TR><TD>
+		<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER"> 
+ 
+			<TR><TD ALIGN="CENTER">
+				<FONT COLOR="#3D3D3D" ID="font_verdana12">{current system time} : <B>{V_CURRTIME}</B></FONT><P>
+			</TD></TR>
+			 
+			<TR><TD ALIGN="CENTER">
+				<SELECT NAME="timezone" TYPE="TEXT" CLASS="formfont_type01" STYLE="width:300px;">
+					<!-- BEGIN DYNAMIC BLOCK: TABLE1 -->
+					<OPTION VALUE="{V_TIMEVALUE}" {V_CHK}> {V_TIME} 
+					<!-- END DYNAMIC BLOCK: TABLE1 -->
+				</SELECT>
+			</TD></TR>	
+			
+			<TR><TD ALIGN="CENTER">
+				&nbsp;<P>
+				<INPUT TYPE="SUBMIT" VALUE="{submit}" CLASS="formbutn_type01"
+				 STYLE="background:silver; width:150px;">
+				&nbsp; &nbsp;
+				<input type="button" value="{close}" CLASS="formbutn_type01"
+				 STYLE="background:silver; width:150px;" onClick='window.close();'>
+			</TD></TR>
+		</TABLE>
+	</TD></TR> 
+	
+	<TR><TD><IMG SRC="pict/spacer.gif" height=30></TD></TR>
+	
+</TABLE>
+<INPUT TYPE="HIDDEN" NAME="po" VALUE="timezone">
+<INPUT TYPE="HIDDEN" NAME="op" VALUE="timezone_editsave">
+</FORM>

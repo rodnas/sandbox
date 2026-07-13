@@ -1,0 +1,155 @@
+<HTML>
+	<META NAME="pragma" CONTENT="no-cache">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<HEAD>
+	<TITLE>{admin page title}</TITLE>
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+if ( !navigator.cookieEnabled ) {
+	alert("{err cookie}");
+}
+
+function popwindow(winurl, winname, winwidth, winheight)
+{
+	var focusok;
+	var newwin = window.open(winurl, winname, "toolbar=no,location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, top=2, left=2, width="+winwidth+", height="+winheight);
+	
+	if(focusok) {
+		newwin.focus();
+	}
+	return false;
+}
+
+
+// -- System Time Start --
+
+var currenttime = "{V_SERVERTIME}";
+var montharray = new Array("{January}", "{February}", "{March}", "{April}", "{May}", "{June}", "{July}", "{August}", "{September}", "{October}", "{November}", "{December}");
+var serverdate = new Date(currenttime);
+
+function padlength(what)
+{
+	var output = (what.toString().length==1)? "0" + what : what;
+	return output;
+}
+
+function displaytime(){
+	serverdate.setSeconds( serverdate.getSeconds() + 1 );
+	
+	var datestring = serverdate.getFullYear() + " " +
+	                 montharray[serverdate.getMonth()] + " " +
+					 padlength(serverdate.getDate());
+	
+	var timestring = padlength(serverdate.getHours()) + ":" +
+	                 padlength(serverdate.getMinutes()) + ":" +
+					 padlength(serverdate.getSeconds());
+	
+	document.getElementById("servertime").innerHTML = datestring + " " + timestring;
+}
+
+window.onload = function()
+{
+	setInterval("displaytime()", 1000)
+}
+
+// -- System Time End --
+
+
+-->
+</SCRIPT>
+
+<link rel=stylesheet type="text/css" href="mainhtml/{V_THEMEPATH}/style.css">
+<BODY BGCOLOR="#626162" leftmargin=0 topmargin=0 marginheight=0 marginwidth=0>
+<CENTER>
+
+<TABLE WIDTH="100%" BORDER="0" ALIGN="CENTER" CELLSPACING="0" CELLPADDING="0">
+	<TR><TD BGCOLOR="#626162"> 
+		<IMG SRC="pict/adlogo01.jpg" VSPACE=0 BORDER=0 ALIGN=ABSMIDDLE>
+	</TD></TR>
+	
+	<TR><TD BGCOLOR="3D3D3D" ALIGN="RIGHT">
+		<FONT COLOR="SILVER" id="font_verdana12"> {system time} : <B><span id="servertime"></span></B> &nbsp; </FONT>
+		<IMG SRC="pict/sy.gif" VSPACE=5 HSPACE=3 ALIGN="ABSMIDDLE">
+		<A HREF="admin.php?po=logout"><FONT COLOR="GOLD" ID="font_verdana13"><B>{logout}</B></FONT></A>&nbsp; &nbsp;
+	</TD></TR>
+ 	
+	
+	<TR><TD VALIGN="TOP"> 
+		<TABLE WIDTH=100% HEIGHT="100%" ALIGN="CENTER" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+			<TR>
+				<!-- RIGHT START --> 
+				<TD WIDTH=160 VALIGN="TOP" BGCOLOR="#3D7DA5">
+					
+					<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+						<TR><TD VALIGN="TOP">
+						
+							<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER" VALIGN="TOP">
+								<TR><TD BGCOLOR="#0D4B6C">
+									<IMG SRC="pict/arrow_orange.jpg" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">
+									<FONT COLOR="WHITE" ID="font_verdana13"><B>{manage menu}</B></FONT>		 
+								</TD></TR>
+								
+								<TR><TD ALIGN="CENTER">
+									&nbsp;<BR>
+									<A HREF="admin.php?po=webcfg&op=webcfg_main" CLASS="linkWG"><IMG SRC="pict/webcfg.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE"><BR><FONT COLOR="WHITE" ID="font_verdana11"><B>{web cfg}</B></FONT></A>		  
+								</TD></TR>
+		
+								<TR><TD ALIGN="CENTER">
+									&nbsp;<BR>
+									<A HREF="admin.php?po=adcalendar&op=adcalendar_main" CLASS="linkWG"><IMG SRC="pict/floder.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE"><BR><FONT COLOR="WHITE" ID="font_verdana11"><B>{calendar config}</B></FONT></A>
+								</TD></TR>	
+								
+								<TR><TD ALIGN="CENTER">
+									&nbsp;<BR>
+									<A HREF="admin.php?po=adpasswd&op=adpasswd_main" CLASS="linkWG" onClick='return popwindow(this.href, "newwindow", 480, 300);'>
+									<IMG SRC="pict/passwd.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE"><BR><FONT COLOR="WHITE" ID="font_verdana11"><B>{admin psd manage}</B></FONT></A>
+								</TD></TR>
+								
+								<TR><TD ALIGN="CENTER">
+									&nbsp;<BR>
+									<A HREF="admin.php?po=timezone&op=timezone_main" CLASS="linkWG" onClick='return popwindow(this.href, "newwindow", 480, 300);'>
+									<IMG SRC="pict/timezone.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE"><BR><FONT COLOR="WHITE" ID="font_verdana11"><B>{timezone config}</B></FONT></A>
+								</TD></TR>		
+								
+								<TR><TD HEIGHT=150>
+
+								</TD></TR>								
+							</TABLE>
+							
+						</TD></TR>
+					</TABLE>
+					
+				</TD>
+				<!-- RIGHT END -->	
+				
+				<TD BGCOLOR="WHITE" VALIGN="TOP" ALIGN="CENTER">
+					<TABLE WIDTH=100% HEIGHT="100%" ALIGN="CENTER" VALIGN="TOP" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+						<TR><TD>
+							{V_CENTERHTML}
+						</TD></TR>
+						<TR><TD><IMG SRC="pict/spacer.gif" height=50></TD></TR>
+					</TABLE>
+				</TD>
+				
+			</TR>
+		</TABLE>
+	</TD><TR>
+	
+	<TR><TD ALIGN="CENTER">
+		<IMG SRC="pict/spacer.gif" height=20><BR>
+		<FONT ID="font_verdana10" COLOR="#D4D4D4">
+		Calendar Syatem<BR>
+		Created by Kevin 2003 ~ 2006
+		</FONT><BR>
+		<IMG SRC="pict/spacer.gif" height=20><BR>
+	</TD></TR>
+
+</TABLE>
+	
+</CENTER>
+</BODY>
+</HTML>

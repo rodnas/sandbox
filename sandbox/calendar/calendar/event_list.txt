@@ -1,0 +1,1 @@
+a:3:{i:1;s:9:"Available";i:2;s:12:"Fully booked";i:3;s:13:"Not available";}

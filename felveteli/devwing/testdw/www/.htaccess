@@ -1,0 +1,7 @@
+RewriteEngine On 
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule !\.(js|ico|txt|gif|jpg|png|php|css|php3|tpl)$ index.php
+DirectoryIndex index.php

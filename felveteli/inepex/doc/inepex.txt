@@ -1,0 +1,21 @@
+https://github.com/git-guides/install-git
+git clone https://szabo-sandor-ULJu@git.codeaid.io/inepex-72/szabo-sandor-ULJu-player-team-generator-web-api-2eg6.git
+09ec2d280a8506b1ff03566cc1c074457c9ef44f
+git push origin master
+
+
+Repository Instructions
+
+First, install Git
+https://github.com/git-guides/install-git
+
+Clone the repository:
+git clone https://szabo-sandor-ULJu@git.codeaid.io/inepex-72/szabo-sandor-ULJu-player-team-generator-web-api-2eg6.git
+
+Your password is:
+
+09ec2d280a8506b1ff03566cc1c074457c9ef44f
+
+Work on your challenge following the description above.
+Once you are satisfied with the result, push your commits to the master branch of the repository:
+git push origin master

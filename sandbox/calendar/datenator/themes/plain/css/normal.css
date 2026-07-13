@@ -1,0 +1,216 @@
+
+
+/* Popup styles */
+
+.popup_bg
+{
+	background-color: #C0C0C0;
+}
+
+.popup_fg
+{
+	background-color: #EFEFEF;
+}
+
+.popup_text
+{
+	font-size: 12px;
+}
+
+.popup_cp_text
+{
+	font-size: 14px;
+	color: #000000;
+}
+
+/****/
+
+a.admin_menu 
+{
+	font-size: 14px;
+}
+
+/* + link */
+
+a.add
+{
+
+	font-size: 16px;
+
+}
+
+
+/* edit */
+
+a.edit
+{
+	font-size: 10px;
+	color: #990000;
+}
+
+/* Copyright link */
+
+a.cp
+{
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.cp:hover
+{
+	text-decoration: underline;
+}
+
+
+.copyright {
+  font-family: verdana;
+  font-size: 9px; color: #000000;
+}
+
+/* General stylesettings */
+
+body 
+{
+	margin: 0px;
+	font-size: 15px;
+	background-color: #FFFFFF;
+}
+
+table 
+{
+	font-size: 15px;
+	border-collapse: separate;
+}
+
+/* Calendar styles (daycells etc.) */
+
+.day_empty, .day_now, .day_normal
+{
+	border: 1px solid #000000;
+	vertical-align: top;
+	width: 14%;
+	height: 80px;
+}
+
+.little_day_empty, .little_day_now, .little_day_normal
+{
+	vertical-align: top;
+}
+.normal_table
+{
+	border: 1px;
+}
+.cal_name 
+{
+	font-size: 21px;
+}
+
+.month_wday
+{
+border: 1px solid #000000;
+
+}
+
+.month_little_wday
+{
+
+}
+
+.day_empty 
+{
+	background-color: #EFEFEF;
+}
+
+.day_now 
+{
+	background-color: #C0C0C0;
+}
+
+.day_normal 
+{
+	background-color: #FFFFFF;
+}
+
+a.little_day_number 
+{
+	font-size: 12px;
+}
+
+a.day_number 
+{
+	font-size: 19px;
+}
+
+.little_month_title
+{
+	text-align:center;
+	background-color: #EFEFEF;
+}
+.weektext
+{
+	font-size: 10px; color: #FF0000;
+}
+
+/* Other */
+
+.admin_menu
+{
+	font-size: 14px;
+}
+
+.b_table 
+{
+	border-collapse: collapse;
+	border: 1px solid #000000;
+}
+
+.box, .box_subtitle, .box_title
+{
+	border: 1px solid #000000;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.box_title
+{
+	background-color: #C3C3C3;
+	font-weight: bold;
+}
+ 
+.box_subtitle
+{
+  background-color: #E0E0E0;
+	font-weight: bold;
+}
+
+.box
+{
+  background-color: #EFEFEF;
+}
+
+.box_value
+{
+	vertical-align: top;
+	padding-left: 3px;
+  background-color: #FFFFFF;
+}
+
+.minitext
+{
+	font-size: 10px;
+}
+
+.dayview_hours
+{
+	width: 5%;
+	height: 30px;
+	background-color: #EFEFEF;
+	border: 1px solid #000000;
+}
+
+.dayview_eventlist
+{
+	padding: 3px;
+	border: 1px solid #000000;
+}

@@ -1,0 +1,225 @@
+## days
+Day|Day
+Monday|Monday
+Tuesday|Tuesday
+Wednesday|Wednesday
+Thursday|Thursday
+Friday|Friday
+Saturday|Saturday
+Sunday|Sunday
+
+## day abbreviations
+Sun|Sun
+Mon|Mon
+Tue|Tue
+Wed|Wed
+Thu|Thu
+Fri|Fri
+Sat|Sat
+
+## months
+Month|Month
+January|January
+February|February
+March|March
+April|April
+May|May
+June|June
+July|July
+August|August
+September|September
+October|October
+November|November
+December|December
+
+## common
+Username|Username
+Password|Password
+Yes|Yes
+No|No
+Choose|Choose
+Confirm|Confirm
+Default|Default
+OK|OK
+Guest|Guest
+Year|Year
+View|View
+User|User
+Back|Back
+
+## login.php
+Log in|Log in
+Back to calendar|Back to calendar
+Administration|Administration
+
+## Repeat types
+None|None
+Daily|Daily
+Weekly|Weekly
+Monthly|Monthly
+Yearly|Yearly
+
+## a_event.php
+Add event|Add event
+Edit event|Edit event
+Event information|Event information
+Title|Title
+Description|Description
+Location|Location
+Contact name|Contact name
+Contact email|Contact email
+Link|Link
+Date/Time|Date/Time
+Date|Date
+Start time|Start time
+End time|End time
+Repeat type|Repeat type
+Repeat closedate|Repeat closedate
+Use closedate|Use closedate
+Weekdays (on weekly)|Weekdays (on weekly)
+Repeat frequency|Repeat frequency
+(e.g 1 = every day/year/month/week, 2 = every other... etc)|(e.g 1 = every day/year/month/week, 2 = every other... etc)
+Appearance|Appearance
+Font|Font
+Size|Size
+Style|Style
+Color|Color
+Errors occured|Errors occured
+Event succesfully added|Event succesfully added
+Event succesfully edited|Event succesfully edited
+Invalid date|Invalid date
+Invalid event title|Invalid event title
+Select repeat days on weekly event|Select repeat days on weekly event
+
+## browse_events.php
+Edit events|Edit events
+Browse/Search events|Browse/Search events
+Browse|Browse
+Search|Search
+by|by
+Go|Go
+Day|Day
+Events|Events
+[edit]|[edit]
+[delete]|[delete]
+Showing events from %s|Showing events from %s
+Searching events with keyword "%s"|Searching events with keyword "%s"
+(Found %s events)|(Found %s events)
+Are you sure you want to delete this event?|Are you sure you want to delete this event?
+
+## preferences.php
+Calendar settings|Calendar settings
+General|General
+Page title|Page title
+META-keywords|META-keywords
+META-description|META-description
+Display language|Display language
+Weeks first day|Weeks first day
+Allow guests to add events|Allow guests to add events
+Admin settings|Admin settings
+New password?|New password?
+Confirm password|Confirm password
+Event settings|Event settings
+Update|Update
+Show week numbers|Show week numbers
+Calendar logo|Calendar logo
+Preferred view|Preferred view
+
+## event.php
+Close window|Close window
+Link|Link
+Print|Print
+Contact|Contact
+Time|Time
+Author|Author
+
+## index.php
+Week|Week
+Edit|Edit
+Delete|Delete
+Add event to this day|Add event to this day
+Log in|Log in
+
+## admin menu
+Calendar|Calendar
+Admin|Admin
+Edit settings|Edit settings
+Add event|Add event
+Manage users|Manage users
+Log out|Log out
+Updates|Updates
+Check for updates|Check for updates
+
+## colors
+Black|Black
+Red|Red
+Blue|Blue
+Green|Green
+Yellow|Yellow
+Orange|Orange
+Brown|Brown
+Grey|Grey
+Gold|Gold
+Silver|Silver
+Lime|Lime
+Darkred|Darkred
+Cyan|Cyan
+Purple|Purple
+Pink|Pink
+Violet|Violet
+
+## styles
+Bold|Bold
+Italic|Italic
+BoldItalic|BoldItalic
+
+## manage_users.php
+Manage users|Manage users
+Click username to edit|Click username to edit
+Admins|Admins
+Normal users|Normal users
+New user|New user
+User level|User level
+Normal user|Normal user
+Admin user|Admin user
+Add new user|Add new user
+Edit user|Edit user
+
+## edituser.php
+Edit user|Edit user
+Change password?|Change password?
+Delete user|Delete user
+
+## admin.php
+Preferences|Preferences
+Here you can edit general calendar settings|Here you can edit general calendar settings
+Add/Edit/Delete users|Add/Edit/Delete users
+Add new event to the calendar|Add new event to the calendar
+RSS Feed|RSS Feed
+Generate RSS feed|Generate RSS feed
+Check for Datenator updates|Check for Datenator updates
+
+#sekalaista
+Delete admin|Delete admin
+Super admin|Super admin
+Manage admins|Manage admins
+Themes|Themes
+Activity log|Activity log
+Edit admins|Edit admins
+Add a new administrator|Add a new administrator
+User ID|User ID
+Modifying user info|Modifying user info
+Event popup|Event popup
+width x height|width x height
+New password|New password
+Are you sure you want to delete|Are you sure you want to delete
+Type username|Type username
+Activated|Activated
+Activate|Activate
+Themes available|Themes available
+URL|URL
+Theme name|Theme name
+Actions|Actions
+pixels|pixels
+Wrong username/password!|Wrong username/password!
+Event succesfully deleted|Event succesfully deleted

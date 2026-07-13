@@ -1,0 +1,184 @@
+<script language="JavaScript">
+<!--
+
+var MonthName=["{January}", "{February}", "{March}", "{April}", "{May}", "{June}","{July}", "{August}", "{September}", "{October}", "{November}", "{December}"];
+var WeekDayName=["{sun}","{mon}","{tue}","{wed}","{tue}","{fri}","{sat}"];
+
+function checkdata(objForm)
+{
+	var digitPattern = /^[0-9]{0,10}$/;
+	var psdPattern   = /^[a-zA-Z0-9]{2,10}$/;
+	var telPattern   = /^[0-9][0-9-#]{2,}$/;
+	var accPattern   = /^[a-zA-Z0-9][a-zA-Z0-9_]{2,20}$/; 
+	var emailPattern = /^([a-zA-Z0-9_-_.])+@+[a-zA-Z0-9_-_.]/;
+	
+	
+	if ( objForm.datetime.value == "" && objForm.inputdatetime.value == "" ) {
+		alert ('{date error}');
+		objForm.inputdatetime.focus();
+		return false;
+	}
+	
+	if ( objForm.keyintype02.checked == true ) {
+
+		if ( objForm.inputdatetime.value == "" ) {
+			alert ('{date error}');
+			objForm.inputdatetime.focus();
+			return false;		
+		}
+		
+		var aryDatetime = objForm.inputdatetime.value.split("-");
+		var strMonth = aryDatetime[1];
+
+		if ( strMonth.length < 2 )
+		  strMonth = "0" + aryDatetime[1];
+		  
+		var strYYYYMM = aryDatetime[2] + strMonth;
+		
+		if ( strYYYYMM > {V_MAXDATE} || strYYYYMM < {V_MINDATE} ) {
+			alert ('{date range error}');
+			objForm.inputdatetime.focus();
+			return false;
+		}
+		
+	}
+	
+	if ( objForm.title.value.length < 1 ) {
+		alert ('{plz ipt title}');
+		objForm.title.focus();
+		return false;
+	}
+	
+	if ( objForm.comment.value.length < 1 ) {
+		alert ('{plz ipt content}');
+		objForm.comment.focus();
+		return false;
+	}  
+	
+	if ( !digitPattern.test(objForm.rank.value) ) {
+		alert ('{rank error}');
+		objForm.rank.focus();
+		return false;
+	}	
+	
+	return true;
+}
+
+//-->
+</script>
+
+<script language="javascript" type="text/javascript" src="admin/adcalendar/datetimepicker.js">
+</script>
+
+<form action="admin.php" method="POST" id="form1" name="form1" onsubmit="return checkdata(this) ;">
+
+<TABLE WIDTH="98%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+
+	<!-- HEAD TITLE START -->
+	<TR><TD>
+		<IMG SRC="pict/webcfg.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">&nbsp;
+		<FONT COLOR="#666666" ID="font_verdana20"><B>{calendar config}</B></FONT>
+	</TD></TR>
+	
+	<TR><TD BACKGROUND="pict/dot.gif"><IMG SRC="pict/spacer.gif" HEIGHT=2 BORDER=0></TD></TR>
+	<TR><TD><IMG SRC="pict/spacer.gif" height=20></TD></TR>	   
+	<!-- HEAD TITLE END -->
+   
+
+	<!-- MAIN FORM START -->
+	<TR><TD>
+		<TABLE BGCOLOR="SILVER" WIDTH=550 CELLSPACING=1 CELLPADDING=2 BORDER=0 ALIGN="CENTER">  
+ 			<TR><TD COLSPAN=2 BGCOLOR="#666666">
+				&nbsp; <FONT ID="font_verdana15" COLOR="#EEEEEE"><B>{add data}</B></FONT>
+			</TD></TR>
+			
+			<TR>
+				<TD BGCOLOR="#F4F4F4">&nbsp; <FONT ID="font_verdana12" COLOR="#3D3D3D">{date}</FONT></TD>
+				<TD BGCOLOR="WHITE">
+					<SPAN ID="span_keyintype01" STYLE='display:{V_SPANKEYIN};'>
+					<INPUT ID="keyintype01" NAME="fm_data[keyintype]" TYPE="RADIO" CHECKED
+					 onClick='document.form1.inputdatetime.value=""'>
+					<FONT ID="font_verdana12" COLOR="#3D3D3D"><B>{V_DATELIST}</B></FONT>
+					<BR>
+					<INPUT ID="keyintype02" NAME="fm_data[keyintype]" TYPE="RADIO"
+					 onClick='document.form1.datetime.value=""'>
+					</SPAN>
+					
+			  		<input type="Text" id="inputdatetime" name="fm_data[inputdatetime]" maxlength="25" READONLY
+					 CLASS="formfont_type01" STYLE="width:150px; font-size:13px; font-weight:bold; border:1px solid GRAY">
+					<a href="javascript:NewCal('inputdatetime', 'ddmmyyyy', false, 24)">
+					<img src="pict/cal.gif" border="0" ALIGN="ABSMIDDLE" onClick='document.form1.keyintype02.checked = true'></a>
+	  				<FONT ID="font_verdana10" COLOR="#666666">
+					{setup date}<BR>
+					{date range} : <B>{V_MINDATESTR}</B> ~ <B>{V_MAXDATESTR}</B>
+					</FONT>
+				</TD>
+			</TR>
+			 
+			<TR>
+				<TD BGCOLOR="#F4F4F4" VALIGN="TOP">&nbsp; <FONT ID="font_verdana12" COLOR="#3D3D3D">{title}</FONT></TD>
+				<TD BGCOLOR="WHITE">
+					<TEXTAREA ID="title" NAME="fm_data[title]" ROWS=2 
+					 CLASS="formfont_type01" STYLE="width:350px; border:1px solid GRAY"></TEXTAREA>
+					<IMG SRC="pict/info.gif" VSPACE=3 HSPACE=3 BORDER=0 ALIGN="BOTTOM">	
+				</TD>
+			</TR>
+			
+			<TR>
+				<TD BGCOLOR="#F4F4F4" VALIGN="TOP">&nbsp; 
+					<FONT ID="font_verdana12" COLOR="#3D3D3D">{content}</FONT>
+				</TD>
+				<TD BGCOLOR="WHITE">
+					<TEXTAREA ID="comment" NAME="fm_data[content]" ROWS=10
+					 CLASS="formfont_type01" STYLE="width:350px; border:1px solid GRAY"></TEXTAREA>
+					<IMG SRC="pict/info.gif" VSPACE=3 HSPACE=3 BORDER=0 ALIGN="BOTTOM">	
+				</TD>
+			</TR>
+			
+			<TR>
+				<TD BGCOLOR="#F4F4F4" VALIGN="TOP">&nbsp; 
+					<FONT ID="font_verdana12" COLOR="#3D3D3D">{sender}</FONT>
+				</TD>
+				<TD BGCOLOR="WHITE">
+					<INPUT ID="sender" NAME="fm_data[sender]" TYPE="TEXT" MAXLENGTH="50"
+					 CLASS="formfont_type01" STYLE="width:350px; border:1px solid GRAY">    
+				</TD>
+			</TR>  
+			
+			<TR>
+				<TD BGCOLOR="#F4F4F4" VALIGN="TOP">&nbsp; 
+					<FONT ID="font_verdana12" COLOR="#3D3D3D">{rank}</FONT>
+				</TD>
+				<TD BGCOLOR="WHITE">
+					<INPUT ID="rank" NAME="fm_data[rank]" TYPE="TEXT" MAXLENGTH="2"
+					 CLASS="formfont_type01" STYLE="width:50px; border:1px solid GRAY">    
+				</TD>
+			</TR> 
+			
+			<TR><TD BGCOLOR="#F4F4F4" COLSPAN=2 ALIGN="RIGHT">
+				<IMG SRC="pict/info.gif" VSPACE=3 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">
+				<FONT ID="font_verdana12" COLOR="GRAY">{plz dont empty}</FONT>
+			</TD></TR> 
+			
+		</TABLE>
+	</TD></TR>
+	<!-- MAIN FORM END -->
+	
+	<TR><TD ALIGN="CENTER">
+		&nbsp;<BR>
+		<INPUT TYPE="SUBMIT" VALUE="{submit}" CLASS="formbutn_type01"
+		 STYLE="background:silver; width:200px;">
+		&nbsp; &nbsp;
+		<input type="button" value="{cancel}" CLASS="formbutn_type01"
+		 STYLE="background:silver; width:200px;"
+		 onClick='location="admin.php?po=adcalendar&op=adcalendar_main&fm_data[datetime]={V_DATETIME}"'>
+	</TD></TR>
+	
+	<TR><TD><IMG SRC="pict/spacer.gif" height=30></TD></TR>
+</TABLE>
+
+<INPUT TYPE="HIDDEN" ID="datetime" NAME="fm_data[datetime]" VALUE="{V_DATETIME}">
+<INPUT TYPE="HIDDEN" NAME="po" VALUE="adcalendar">
+<INPUT TYPE="HIDDEN" NAME="op" VALUE="adcalendar_addsave">
+
+</FORM>

@@ -1,0 +1,63 @@
+<TABLE WIDTH="98%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+
+	<!-- HEAD TITLE START -->
+	<TR><TD>
+		<IMG SRC="pict/floder.gif" VSPACE=5 HSPACE=3 BORDER=0 ALIGN="ABSMIDDLE">&nbsp;
+		<FONT COLOR="#666666" ID="font_verdana20"><B>{calendar config}</B></FONT>
+	</TD></TR>
+	
+	<TR><TD BACKGROUND="pict/dot.gif"><IMG SRC="pict/spacer.gif" HEIGHT=2 BORDER=0></TD></TR>
+	<TR><TD><IMG SRC="pict/spacer.gif" height=20></TD></TR>	   
+	<!-- HEAD TITLE END -->	
+	
+	
+	<TR><TD>
+		<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">
+			<TR>
+				<TD><FONT ID="font_verdana20" COLOR="#3D3D3D"><B>{V_CURRDATE}</B></FONT></TD>
+				<TD ALIGN="RIGHT">
+					<A HREF="admin.php?po=adcalendar&op=adcalendar_add">
+					<FONT ID="font_verdana12" COLOR="BLUE"><U>{other month add}</U></FONT></A>
+					&nbsp;
+					<SELECT CLASS="formfont_type01"
+					 onChange="location.href=this.options[this.selectedIndex].value;"
+					 STYLE="width:200px; border:1px solid GRAY">
+						<!-- BEGIN DYNAMIC BLOCK: TABLE1 -->
+						<OPTION VALUE="admin.php?po=adcalendar&op=adcalendar_main&fm_data[datetime]={V_VALUEDATE}" {V_SELECT}> {V_DATETIMELIST} --- x {V_TOTNUMS}
+						<!-- END DYNAMIC BLOCK: TABLE1 -->
+					</SELECT>
+				</TD>	
+			</TR>
+			
+		</TABLE>
+	</TD></TR>
+	
+	<TR>
+		<TD>
+			<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER">         
+				<TR BGCOLOR="GRAY">
+					<TD WIDTH=60> &nbsp; <FONT COLOR="WHITE" ID="font_verdana12"><B>{date}</B></FONT></TD>	  
+					<TD WIDTH=100> &nbsp; <FONT COLOR="WHITE" ID="font_verdana12"><B>{week}</B></FONT></TD>
+					<TD><FONT COLOR="WHITE" ID="font_verdana12"><B>{content}</B></FONT></TD>
+					<TD WIDTH=100 ALIGN="CENTER"><NOBR><FONT COLOR="WHITE" ID="font_verdana12"><B>{add data}</B></FONT></NOBR></TD>
+				</TR>    
+				
+				<!-- BEGIN DYNAMIC BLOCK: TABLE2 -->
+				<TR BGCOLOR="{V_COLOR}">
+					<TD> &nbsp; <FONT COLOR="#3D3D3D" ID="font_arial24"><B>{V_DATE}</B></FONT></TD>	  
+					<TD> &nbsp; <FONT COLOR="#3D3D3D" ID="font_verdana12">{V_WEEK}</FONT></TD>
+					<TD>{V_CONTENT}</TD>
+					<TD ALIGN="CENTER">
+						<A HREF="admin.php?po=adcalendar&op=adcalendar_add&fm_data[datetime]={V_LISTDATE}&fm_data[datetime]={V_DATETIME}"><FONT ID="font_verdana12" COLOR="BLUE"><U>{add one}</U></FONT></A>	   
+					</TD>
+				</TR> 
+				 
+				<TR><TD COLSPAN=4 BACKGROUND="pict/dot.gif"><IMG SRC="pict/spacer.gif" HEIGHT=2 BORDER=0></TD></TR>
+				<!-- END DYNAMIC BLOCK: TABLE2 -->
+				
+			</TABLE>
+			
+		</TD>
+	</TR>
+	
+</TABLE>
